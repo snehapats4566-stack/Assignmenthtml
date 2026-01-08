@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>HTML Practice Page</title>
+        <meta charset="UTF-8">
+        <style>
+            /* 15. Whole Page Vibe Check */
+            body {
+                margin: 0;
+                padding: 40px 20px;
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f8f9fa;
+                line-height: 1.6;
+            }
+
+            /* 1. Main Character Energy */
+            #main-heading {
+                text-align: center;
+                font-size: 3.5rem;
+                text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                color: #1f2937;
+                transition: color 0.3s ease;
+                margin-bottom: 30px;
+            }
+
+            #main-heading:hover {
+                color: #f63be6;
+            }
+
+            /* 2. Subheading but Make It Aesthetic */
+            h3 {
+                letter-spacing: 3px;
+                opacity: 0.85;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            /* 3. Paragraph Glow-Up */
+            .description {
+                background-color: #fff8f0;
+                padding: 25px;
+                border-radius: 12px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            /* 4. "Important Info" but Dramatic */
+            #special-paragraph {
+                border: 3px solid #e11d48;
+                background-color: #fef2f2;
+                padding: 20px;
+                transform: rotate(-1deg);
+                margin-bottom: 20px;
+            }
+
+            /* 5. HR but Make It Fancy */
+            hr {
+                width: 70%;
+                height: 3px;
+                border: none;
+                background-color: #a9b852;
+                border-radius: 10px;
+                margin: 30px auto;
+            }
+
+            /* 6. Pre Tag = Hacker Mode */
+            pre {
+                background-color: #1a1a2e !important;
+                color: #00ff00 !important;
+                font-family: 'Courier New', monospace;
+                padding: 20px;
+                border-radius: 8px;
+                overflow-x: auto;
+                margin-bottom: 30px;
+            }
+
+            /* 7. Unordered List = Pinterest Vibes */
+            .features-list {
+                list-style: none;
+                padding: 0;
+                background-color: #fffbeb;
+                padding: 25px;
+                border-radius: 12px;
+                margin-bottom: 30px;
+            }
+
+            .features-list li {
+                padding: 12px 0;
+                padding-left: 30px;
+                position: relative;
+            }
+
+            .features-list li:before {
+                content: "✓";
+                position: absolute;
+                left: 0;
+                color: #f59e0b;
+                font-weight: bold;
+            }
+
+            /* 8. Ordered List = Step-by-Step Boss */
+            #steps-list {
+                list-style-type: upper-roman;
+                padding-left: 40px;
+                margin-bottom: 30px;
+            }
+
+            #steps-list li {
+                font-weight: bold;
+                margin-bottom: 15px;
+                letter-spacing: 1px;
+            }
+
+            /* 9. Link = Don't Look Like a Link */
+            .resource-link {
+                text-decoration: none;
+                color: #6b7280;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+            .resource-link:hover {
+                color: #0c0614;
+                text-decoration: underline;
+            }
+
+            /* 10. Div = Card UI */
+            div {
+                border: 2px solid #e5e7eb;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 30px;
+                background-color: white;
+            }
+
+            /* 11. Span = Accent Word */
+            span {
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+
+            /* 12. Button = Click Me or Else */
+            #submit-button {
+                cursor: pointer;
+                padding: 15px 30px;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                font-weight: bold;
+                font-size: 1rem;
+                border: none;
+            }
+
+            /* 13. Button Hover Chaos */
+            #submit-button:hover {
+                background-color: #65a30d !important;
+                box-shadow: 0 8px 20px rgba(135, 216, 165, 0.4);
+                transform: scale(1.05);
+            }
+
+            /* 14. Footer but Low-Key */
+            .page-footer {
+                font-size: 0.875rem;
+                color: #9ca3af;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .page-footer p {
+                margin: 0;
+                background-color: transparent;
+                padding: 0;
+                border-radius: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-heading">Welcome to HTML Practice</h1>
+        
+        <h3 style="color: #2563eb;">Learning HTML Basics</h3>
+        
+        <p class="description">
+            <b>HTML</b> is the <strong>foundation of web development</strong>. It provides the <i>structure</i> and <em>semantic meaning</em> to web content.
+        </p>
+        
+        <p id="special-paragraph">
+            HTML is <mark>essential</mark> for creating web pages. It is easy to learn and used to create web pages.<sub>2</sub>O <sup>2</sup> 
+            it structures the content on the web using elements called tags.
+        </p>
+        
+        <hr style="border: 2px solid #a9b852;">
+        
+        <pre style="color: #8d61d8;">
+HTML helps define headings, paragraphs, images, links, tables, and forms.
+   It works together with CSS for styling and JavaScript for interactivity.
+       It runs in a web browser.
+        </pre>
+        
+        <ul class="features-list">
+            <li>Easy to learn</li>
+            <li>Widely supported</li>
+            <li>Foundation for web development</li>
+        </ul>
+        
+        <ol id="steps-list">
+            <li>Learn HTML structure</li>
+            <li>Practice with examples</li>
+            <li>Build real projects</li>
+        </ol>
+        
+        <a href="https://www.w3schools.com/html/" target="_blank" class="resource-link" style="color: #0c0614; text-decoration: underline; font-weight: bold;">Learn more about HTML</a>
+        
+        <div>
+            This is a <span style="color: #e28398; font-weight: bold;">highlighted</span> word in a div.
+        </div>
+        
+        <button id="submit-button" style="background-color: #87d8a5; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+        
+        <footer class="page-footer" style="font-size: 0.875rem; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
+            <p>&copy; 2026 HTML Practice Page.</p>
+        </footer>
+    </body>
+</html>
